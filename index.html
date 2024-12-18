@@ -3,13 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f5a208;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #000000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact {
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #313131;
+            font-size: 1.2em;
+        }
+        .contact a:hover {
+            color: #fa8f2a;
+            text-decoration: underline;
+        }
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #fa8f2a;
+            color: white;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            li {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h5># Phuvis wong </h5>
-    <h1># menu</h1>
-    <h1># nb.20</h1>
-    <h1># IT.5101</h1>
-    <h1># nbs. 66309010032</h1>
+
+    <header>
+        <h1>Welcome to My Profile</h1>
+    </header>
+
+    <div class="container">
+        <img src="Menu.jpg" alt="Profile picture of Phuvis Wong" class="profile-pic">
+        <h1>Phuvis Wong</h1>
+        
+        <h2>ข้อมูลส่วนตัว</h2>
+        <ul>
+            <h3>เกิด 27 พฤษภาคม 2547</h3>
+            <li><strong>ชื่อ:</strong> นาย.ภูวิศ ว่องวิชชเลิศกิจ</li>
+            <li><strong>ชื่อเล่น:</strong> Menu</li>
+            <li><strong>เลขที่:</strong> 20</li>
+            <li><strong>ห้อง:</strong> IT.5101</li>
+            <li><strong>รหัสนักศึกษา:</strong> 66309010032</li>
+            <li><strong>เบอร์โทร:</strong> 093-575-7210</li>
+        </ul>
+
+        <div class="contact">
+            <h2>ติดต่อ</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/menu.gt" target="_blank" aria-label="Visit Facebook profile of Phuvis Wong">Facebook</a></li>
+                <li><a href="https://www.instagram.com/phuvis_wong2004/" target="_blank" aria-label="Visit Instagram profile of Phuvis Wong">Instagram</a></li>
+                <li><strong>Gmail:</strong> phuviswong@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="map-container">
+            <h2>ตำแหน่งที่ตั้ง</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.1018289423478!2d99.02204367519836!3d18.79361478235372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da25457746d183%3A0x3f2a6fdbded604ce!2z4Lin4LiZ4Liy4Liq4Li04LiZ4LmA4Lie4Lil4Liq!5e0!3m2!1sth!2sth!4v1734496987537!5m2!1sth!2sth" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <noscript>Your browser does not support embedded maps or JavaScript is disabled.</noscript>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Phuvis Wong</p>
+    </footer>
+
 </body>
 </html>
